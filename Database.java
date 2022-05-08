@@ -8,7 +8,7 @@ public class Database {
 	ArrayList<Pokemon> pokedata = new ArrayList<Pokemon>();
 	Random rand = new Random();
 
-	// Mozdulatok soronkÃ©nti beolvasÃ¡sa fÃ¡jlbÃ³l Ã©s lÃ©trehozÃ¡suk
+	// Mozdulatok soronkénti beolvasása fájlból és létrehozásuk
 	public void ReadFile() {
 		try {
 			Scanner reader = new Scanner(new File("Movedata.txt"));
@@ -23,7 +23,7 @@ public class Database {
 		}
 	}
 
-	//Pokemonok soronkÃ©nti beolvasÃ¡sa fÃ¡jlbÃ³l Ã©s lÃ©trehozÃ¡suk
+	//Pokemonok soronkénti beolvasása fájlból és létrehozásuk
 	public void ReadFile2() {
 		try {
 			Scanner reader = new Scanner(new File("Pokemondata.txt"));
@@ -48,7 +48,7 @@ public class Database {
 		}
 	}
 
-	//Pokemonok vÃ©letlenszerÃ» kivÃ¡lasztÃ¡sa a harcban
+	//Pokemonok véletlenszerû kiválasztása a harcban
 	public Pokemon randomPoke() {
 		int rando = rand.nextInt(pokedata.size());
 		pokedata.get(rando).bigHeal();
