@@ -8,7 +8,7 @@ public class Database {
 	ArrayList<Pokemon> pokedata = new ArrayList<Pokemon>();
 	Random rand = new Random();
 
-	// Mozdulatok soronkÈnti beolvas·sa f·jlbÛl Ès lÈtrehoz·suk
+	// Mozdulatok soronk√©nti beolvas√°sa f√°jlb√≥l √©s l√©trehoz√°suk
 	public void ReadFile() {
 		try {
 			Scanner reader = new Scanner(new File("Movedata.txt"));
@@ -23,7 +23,7 @@ public class Database {
 		}
 	}
 
-	//Pokemonok soronkÈnti beolvas·sa f·jlbÛl Ès lÈtrehoz·suk
+	//Pokemonok soronk√©nti beolvas√°sa f√°jlb√≥l √©s l√©trehoz√°suk
 	public void ReadFile2() {
 		try {
 			Scanner reader = new Scanner(new File("Pokemondata.txt"));
@@ -48,14 +48,7 @@ public class Database {
 		}
 	}
 
-	// Maybe creat your own pokemon?
-	// String[] readpoke = reader.nextLine().split(", ");
-	// Pokemon poke = new Pokemon(Integer.parseInt(readpoke[0]), readpoke[1],
-	// Integer.parseInt(readpoke[2]),Integer.parseInt(readpoke[3]), move,
-	// readpoke[4]);
-
-	
-	//Pokemonok vÈletlenszer˚ kiv·laszt·sa a harcban
+	//Pokemonok v√©letlenszer√ª kiv√°laszt√°sa a harcban
 	public Pokemon randomPoke() {
 		int rando = rand.nextInt(pokedata.size());
 		pokedata.get(rando).bigHeal();
