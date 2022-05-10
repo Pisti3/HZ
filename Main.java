@@ -31,7 +31,7 @@ public class Main
 		bulb.setPlayer(play);
 		
 		//Adok a játékosnak 2000$-t és egy közepes potiont hogy ne legyen túl nehéz a játék az elején
-		play.getInventory().changeMoney(2000);
+		play.getInventory().changeMoney(3000);
 		play.getInventory().addItem("Medium Potion");
 		
 		//Ezzel indítom el a játékot

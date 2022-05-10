@@ -61,7 +61,7 @@ public class Game {
 				if (time >= 22 || time < 6) {
 					System.out.println("Sorry, but we're closed.");
 				} else {
-					if (player.getInventory().getMoney() > 2000) {
+					if (player.getInventory().getMoney() >= 2000) {
 						this.pokemon.bigHeal();
 						System.out.println("Your Pokemon has been healed!");
 						player.getInventory().changeMoney(-2000);
