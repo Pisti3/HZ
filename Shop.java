@@ -20,7 +20,7 @@ public class Shop {
 		System.out.print("What do you want to buy?");
 		int number = bolt.nextInt();
 
-		if (a.getInventory().getMoney() > 1500 * number && number <= 3 && number >= 1) {
+		if (a.getInventory().getMoney() >= 1500 * number && number <= 3 && number >= 1) {
 			a.getInventory().addItem(items[number - 1]);
 			System.out.println("You bought a " + items[number - 1]);
 		} else {
@@ -28,7 +28,6 @@ public class Shop {
 				System.out.println("That was not an option!");
 			} else {
 				System.out.println("You don't have any money!");
-				return;
 			}
 		}
 	}
