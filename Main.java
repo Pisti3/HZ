@@ -1,6 +1,6 @@
 package full;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Main 
 {
@@ -10,7 +10,7 @@ public class Main
 	
 	public static void main(String[] args) 
 	{
-		Scanner help = new Scanner(System.in);
+		//Scanner help = new Scanner(System.in);
 		//String name = help.nextLine();
 		
 		
