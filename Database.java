@@ -48,13 +48,6 @@ public class Database {
 		}
 	}
 
-	// Maybe creat your own pokemon?
-	// String[] readpoke = reader.nextLine().split(", ");
-	// Pokemon poke = new Pokemon(Integer.parseInt(readpoke[0]), readpoke[1],
-	// Integer.parseInt(readpoke[2]),Integer.parseInt(readpoke[3]), move,
-	// readpoke[4]);
-
-	
 	//Pokemonok véletlenszerû kiválasztása a harcban
 	public Pokemon randomPoke() {
 		int rando = rand.nextInt(pokedata.size());

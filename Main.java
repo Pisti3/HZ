@@ -1,24 +1,23 @@
 package full;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Main 
 {
-	
-	//nehézségi fokozat
-	//lehessen dolgozni pénzért
-	//legyen idõ rendszer pl 8 órákra bontva
-	//lehessen xp-vel fejleszteni
+	//Hiányzó bónuszok:
+	//- nehézségi fokozat
+	//- lehessen xp-vel fejleszteni
 	
 	public static void main(String[] args) 
 	{
-		Scanner help = new Scanner(System.in);
+		//Scanner help = new Scanner(System.in);
 		//String name = help.nextLine();
 		
 		
 		//létrehozom az inventory-t és a játékost
+		//System.out.println("Mi a neved?");
 		Inventory inv = new Inventory();
-		Player play = new Player("Pisti",inv);
+		Player play = new Player("Player",inv);
 		
 		
 		//létrehozom a 3 kezdõ pokémont és mozdulataikat akik közül lehet választani

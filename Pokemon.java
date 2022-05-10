@@ -190,7 +190,7 @@ public class Pokemon {
 	public Pokemon(int evo, String na, double at, double de, Moves mo, String ty) {
 		rank = evo;
 		name = na;
-		health = 50;
+		health = rank*50;
 		attack = at;
 		defense = de;
 		moves = mo;
